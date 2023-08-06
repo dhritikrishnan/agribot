@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coffee</title>
+        <style>
+          body {
+            background-image: url('bg1.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow: scroll;
+          }
+            p{
+                text-align: center;
+                font-family:Times New Roman;
+                font-size: 60px;
+            }
+            .column {
+                float: left;
+                width: 40%;
+                padding: 5px;
+              }
+              
+              /* Clear floats after image containers */
+              .row::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+              .f1{
+                font-size: 40px;
+                font-family: Georgia;
+              }
+            
+        </style>
+    </head>
+
+    <body style="background-image: url('bg1.jpeg ');">
+        <p>Cotton</p>
+        <div class="row">
+            <div class="column">
+              <img src="cotton.png" alt="cotton" style="width:100%">
+            </div>
+            <div class="column">
+                <ul>
+                    <li class="f1">Soil should be well drained</li>
+                    <li class="f1">Good water holding capacity</li>
+                    <li class="f1">Devoid of any hard pan or impervious layer </li>
+                    <li class="f1">Soil pH should be between 4.0-9.5</li>
+                </ul>
+            </div>
+          </div>
+    </body>
+
+</html>
