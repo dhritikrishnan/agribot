@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            var request = new XMLHttpRequest();
+            //var urlHere = "https://api.thingspeak.com/channels/1849351/feeds.csv?api_key=MLGLHFK2BWW58SNE&results=1";
+            document.write(urlHere);
+            request.open('GET', urlHere, true);
+            GET https://api.thingspeak.com/channels/1849351/feeds.csv?api_key=MLGLHFK2BWW58SNE&results=1
+            request.onload = function() 
+            {
+                if (request.status >= 200 && request.status < 400) 
+                {
+                    var data = JSON.parse(request.responseText);
+                    var dia = date.getDate();
+                    var mes = date.getMonth();
+                    mes++;
+                    var ano = date.getFullYear();
+                    var hora = date.getHours();
+                    var minuto = date.getMinutes();
+                    document.getElementById("camb").innerHTML = "Câmbio Dólar: R$ " + data.feeds[0].field1 +  " | Atualizado em " + dia + "/" + mes + "/" + ano + " às " + hora + ":" + minuto;
+                } 
+            };
+
+            request.send();
+        </script>
+    </head>
+</html>

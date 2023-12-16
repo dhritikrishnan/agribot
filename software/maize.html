@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maize</title>
+        <style>
+          body {
+            background-image: url('bg1.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow: scroll;
+          }
+            p{
+                text-align: center;
+                font-family:Times New Roman;
+                font-size: 60px;
+            }
+            .column {
+                float: left;
+                width: 40%;
+                padding: 5px;
+              }
+              
+              /* Clear floats after image containers */
+              .row::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+              .f1{
+                font-size: 40px;
+                font-family: Georgia;
+              }
+            
+        </style>
+    </head>
+
+    <body style="background-image: url('bg1.jpeg ');"></body>
+        <p>Maize</p>
+        <div class="row">
+            <div class="column">
+              <img src="maize.png" alt="maize" style="width:100%">
+            </div>
+            <div class="column">
+                <ul>
+                    <li class="f1">Temperatures between 18°C and 27°C during the day and around 14°C during the night.</li>
+                    <li class="f1">140 frost-free days. </li>
+                    <li class="f1">Very susceptible to frost</li>
+                </ul>
+            </div>
+          </div>
+    </body>
+
+</html>
